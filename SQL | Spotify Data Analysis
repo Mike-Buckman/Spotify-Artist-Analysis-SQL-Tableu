@@ -5,7 +5,7 @@ SELECT
 	sh.shuffle,
 	sh.skipped,
 	sum(sh.ms_played/60000.0) as Minutes_Played,
-	count(sh.track_name) as Track_Count,
+	count(sh.track_name) as Track_Count
 from
 	SPOTIFY_HISTORY sh 
 where
